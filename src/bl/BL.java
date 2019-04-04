@@ -12,7 +12,9 @@ public class BL {
         this.text = text;
         this.inputName = inputName;
     }
-
+    
+    //Hilfe von Manuel Zitz.
+    
     public HashMap<String, Integer> countWords() {
         String[] parts = text.split(" ");
         HashMap<String, Integer> map = new HashMap();
@@ -23,7 +25,6 @@ public class BL {
                 map.put(word, map.get(word) + 1);
             }
         }
-        
         LinkedList<String> keys = new LinkedList<String>();
         for (String key : map.keySet()) {
             if(map.get(key) < 2){

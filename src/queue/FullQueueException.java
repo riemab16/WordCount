@@ -1,5 +1,5 @@
 package queue;
 
-class FullQueueException extends Exception {
+public class FullQueueException extends Exception {
     
 }
