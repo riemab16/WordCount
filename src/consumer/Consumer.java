@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 import queue.EmptyQueueException;
 import queue.MyQueue;
 
-public class Consumer implements Runnable{
+public class Consumer extends Thread{
  private final MyQueue<BL> queue;
     private final GUI zustand;
     

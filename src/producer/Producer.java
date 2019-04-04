@@ -8,7 +8,7 @@ import java.io.FileReader;
 import queue.FullQueueException;
 import queue.MyQueue;
 
-public class Producer implements Runnable{
+public class Producer extends Thread{
 
     private final MyQueue<BL> myQueue;
     private final GUI zustand;
